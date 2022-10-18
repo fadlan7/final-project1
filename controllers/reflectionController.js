@@ -55,7 +55,7 @@ class reflectionController {
     const { success, low_point, take_away } = req.body;
     try {
       const reflectionData = db.query(
-        `UPDATE reflections SET success='${success}', low_point='${low_point}', take_away='${take_away}', created_date='${datetime}', modified_date='${datetime}' WHERE id='${id}'`
+        `UPDATE reflections SET success='${success}', low_point='${low_point}', take_away='${take_away}',  modified_date='${datetime}' WHERE id='${id}'`
       );
 
       return res
