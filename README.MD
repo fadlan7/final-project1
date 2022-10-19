@@ -85,7 +85,7 @@
   POST
 - **Success response:**
   Code: 201
-  ![response login success](https://github.com/fadlan7/Assignment-RestAPI-JWT/blob/main/apiresponse_images/postman-loginuser.png)
+  ![response create success](https://github.com/fadlan7/final-project1/blob/main/screenshot/create%20one%20reflection2.png)
 - **Error response:**
   <The request type>
 
@@ -102,7 +102,7 @@
   GET
 - **Success response:**
   Code: 200
-  ![response login success](https://github.com/fadlan7/Assignment-RestAPI-JWT/blob/main/apiresponse_images/postman-loginuser.png)
+  ![response get all own reflections success](https://github.com/fadlan7/final-project1/blob/main/screenshot/get%20all%20own%20reflection%20data.png)
 - **Error response:**
   <The request type>
 
@@ -121,7 +121,7 @@
   PUT
 - **Success response:**
   Code: 200
-  ![response login success](https://github.com/fadlan7/Assignment-RestAPI-JWT/blob/main/apiresponse_images/postman-loginuser.png)
+  ![response edit reflection success](https://github.com/fadlan7/final-project1/blob/main/screenshot/edit%20one%20reflection2.png)
 - **Error response:**
   <The request type>
 
@@ -146,7 +146,7 @@
   DELETE
 - **Success response:**
   Code: 200
-  ![response login success](https://github.com/fadlan7/Assignment-RestAPI-JWT/blob/main/apiresponse_images/postman-loginuser.png)
+  ![response delete reflection success](https://github.com/fadlan7/final-project1/blob/main/screenshot/delete%20one%20reflection.png)
 - **Error response:**
   <The request type>
 
