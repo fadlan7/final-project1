@@ -159,9 +159,3 @@
       Code: 500
       Content: { "message" : "Internal Server Error" }
 
-## Response no routes
-
-<The request type>
-
-    Code: 404
-    Content: { "message": "That route does not exist!"}
