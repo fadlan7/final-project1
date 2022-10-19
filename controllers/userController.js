@@ -24,6 +24,8 @@ class userController {
         `SELECT * FROM users WHERE email='${email}' LIMIT 1;`
       );
 
+      // console.log(dataUser);
+
       if (dataUser) {
         const isCorrectPassword = dataUser.rows[0].password == password;
 

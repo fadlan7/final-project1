@@ -8,17 +8,13 @@ router.post('/api/v1/user/register', userController.register);
 router.post('/api/v1/user/login', userController.login);
 
 router.use(authentication);
-router.get('/api/v1/user/reflections', reflectionController.getAllReflections);
 router.post(
   '/api/v1/user/reflections',
   reflectionController.createOneReflection
 );
+router.get('/api/v1/user/reflections', reflectionController.getAllReflections);
 
 router.use('/api/v1/user/reflections/:id', authorization);
-router.get(
-  '/api/v1/user/reflections/:id',
-  reflectionController.getReflectionById
-);
 router.put(
   '/api/v1/user/reflections/:id',
   reflectionController.updateOneReflectionById

@@ -11,13 +11,17 @@ async function authorization(req, res, next) {
       `SELECT * FROM reflections WHERE id='${reflectionId}'`
     );
 
-    // console.log(findReflection.rows[0].owner_id);
+    // console.log(findReflection.rows == 0);
 
-    if (!findReflection) {
+    if (findReflection.rows == 0) {
       return res
         .status(404)
-        .json({ message: `Reflection with id='${reflectionId}' not found` });
+        .json({
+          message: `Reflection with id='${reflectionId}' not found in database`,
+        });
     }
+
+    // console.log(authenticatedUser);
 
     if (findReflection.rows[0].owner_id === authenticatedUser.rows[0].id) {
       return next();

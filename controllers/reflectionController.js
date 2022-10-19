@@ -18,21 +18,6 @@ class reflectionController {
     }
   }
 
-  static async getReflectionById(req, res) {
-    const id = +req.params.id;
-    const userId = res.locals.user.rows[0].id;
-
-    try {
-      const reflectionData = await db.query(
-        `SELECT * FROM reflections WHERE id=${id} `
-      );
-
-      return res.status(200).json(reflectionData.rows[0]);
-    } catch (error) {
-      return res.status(500).json({ message: error.message });
-    }
-  }
-
   static async createOneReflection(req, res) {
     const { success, low_point, take_away } = req.body;
     const userId = res.locals.user.rows[0].id;
@@ -54,7 +39,7 @@ class reflectionController {
     const id = +req.params.id;
     const { success, low_point, take_away } = req.body;
     try {
-      const reflectionData = db.query(
+      await db.query(
         `UPDATE reflections SET success='${success}', low_point='${low_point}', take_away='${take_away}',  modified_date='${datetime}' WHERE id='${id}'`
       );
 
