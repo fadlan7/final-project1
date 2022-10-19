@@ -49,7 +49,7 @@
 * **Success response:**
 <The request type>
 	Code: 201
-![response login success](https://github.com/fadlan7/Assignment-RestAPI-JWT/blob/main/apiresponse_images/postman-loginuser.png)
+![response register success](https://github.com/fadlan7/final-project1/blob/main/screenshot/register.png)
 * **Error response:**
 	<The request type>
 
@@ -68,7 +68,7 @@
 	   POST
 * **Success response:**
  Code: 200
-![response login success](https://github.com/fadlan7/Assignment-RestAPI-JWT/blob/main/apiresponse_images/postman-loginuser.png)
+![response login success](https://github.com/fadlan7/final-project1/blob/main/screenshot/login.png)
 * **Error response:**
 	<The request type>
 
