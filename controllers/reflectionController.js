@@ -28,7 +28,7 @@ class reflectionController {
       );
 
       return res
-        .status(201)
+        .status(200)
         .json({ message: 'success created one reflection' });
     } catch (error) {
       return res.status(500).json({ message: error.message });
@@ -44,7 +44,7 @@ class reflectionController {
       );
 
       return res
-        .status(201)
+        .status(200)
         .json({ message: `success edit one reflection with id=${id}` });
     } catch (error) {
       return res.status(500).json({ message: error.message });

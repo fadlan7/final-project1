@@ -15,7 +15,7 @@ async function authentication(req, res, next) {
     // console.log(user);
 
     if (!user) {
-      return res.status(401).json({
+      return res.status(404).json({
         message: `User with email ${userDecoded.email} not found in database`,
       });
     }
@@ -24,7 +24,7 @@ async function authentication(req, res, next) {
 
     return next();
   } catch (error) {
-    return res.status(401).json({ message: error.message });
+    return res.status(500).json({ message: error.message });
   }
 }
 

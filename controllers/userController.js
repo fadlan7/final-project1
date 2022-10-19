@@ -41,7 +41,7 @@ class userController {
         }
       } else {
         res
-          .status(402)
+          .status(401)
           .json({ message: `User with email ${email} does not match` });
       }
     } catch (error) {
