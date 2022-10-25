@@ -1,3 +1,4 @@
+
 # Assignment build the first RestAPI using JWT
 
 ## Setup
@@ -5,31 +6,31 @@
 - **users table setup:**
   <The request typ>
 
-  id: serial primary key
-  email: varchar(30)
-  password: varchar(255)
+	    id: serial primary key
+	    email: varchar(30)
+	    password: varchar(255)
 
 - **reflections table setup:**
   <The request typ>
 
-  id: serial primary key
-  success: varchar(255)
-  low_point: varchar(255)
-  take_away: varchar(255)
-  owner_id: integer references users(id)
-  created_date: varchar(30)
-  modified_date: varchar(30)
+	    id: serial primary key
+	    success: varchar(255)
+	    low_point: varchar(255)
+	    take_away: varchar(255)
+	    owner_id: integer references users(id)
+	    created_date: varchar(30)
+	    modified_date: varchar(30)
 
 - **Install all dependencies:**
 
   <The request typ>
 
-  npm install
+	    npm install
 
 - **Start nodemon:**
   <The request type>
 
-  npm run dev
+	    npm run dev
 
 - **The application is run at `http://localhost:8000`**
 
@@ -140,7 +141,7 @@
 
 - **URL:**
   <The request type>
-  /api/v1/reflections/:id
+	/api/v1/reflections/:id
 - **Method:**
   <The request type>
   DELETE
